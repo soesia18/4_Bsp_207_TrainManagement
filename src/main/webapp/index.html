@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Train Management</title>
+    <script src="js/train.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body style="margin: 10%; border: solid green 2px; padding: 50px">
+<h1 class="badge bg-success">Train Management</h1><hr>
+<h1>List all Trains</h1>
+<input class="btn btn-success" type="button" value="All trains" onclick="loadAllTrains()"><br>
+<div id="allTrains">
+
+</div>
+
+<h1>List of Stations</h1>
+<span>ID: </span>
+<input id="listStationsID" type="number">
+<input class="btn btn-success" type="button" value="Stations" onclick="loadListOfStation()"><br>
+<div id="stations">
+
+</div>
+
+<h1>Add Train</h1>
+<span>ID: </span>
+<input id="addTrainID" type="number">
+<span>Type: </span>
+<input id="addTrainType" type="text">
+<input class="btn btn-success" type="button" value="Add Train" onclick="addTrain()"><br>
+
+<h1>Add Station</h1>
+<span>ID: </span>
+<input id="addStationID" type="number">
+<span>Type: </span>
+<input id="addStationType" type="text">
+<input class="btn btn-success" type="button" value="Add Station" onclick="addStation()"><br>
+
+</body>
+</html>
